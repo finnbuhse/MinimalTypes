@@ -14,6 +14,7 @@ These include:
  1. - Download the library as a ZIP and provide it's include directory to your IDE or copy the files into your project.
  2. - MinimalTypes is effectively a header only library, however to allow for cyclic inclusion and avoid function redefinitions you must create a cpp file. It can have any name.
  3. - Within this file you must then write the following lines of code:
+  
     #include "MinimalTypes.h" <- This includes the library so the compiler can match the function definitions within the CPP component to the functions declared in the header file
                                  
     #include MINIMAL_TYPES_INCLUDE <- This includes the addition headers that are not neccessary in the header file but are for the function definitions within the CPP component
