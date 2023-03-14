@@ -17,7 +17,7 @@ These include:
   
     #include "MinimalTypes.h" <- This includes the library so the compiler can match the function definitions within the CPP component to the functions declared in the header file
                                  
-    #include MINIMAL_TYPES_INCLUDE <- This includes the addition headers that are not neccessary in the header file but are for the function definitions within the CPP component
+    #include MINIMAL_TYPES_INCLUDE <- This includes the additional headers that are not neccessary in the header file but are for the function definitions within the CPP component
   
     MINIMAL_TYPES_CPP <- This defines the neccessary function definitions for the library to work properly
  
