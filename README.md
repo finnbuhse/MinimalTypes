@@ -15,7 +15,9 @@ These include:
  2. - MinimalTypes is effectively a header only library, however to allow for cyclic inclusion and avoid function redefinitions you must create a cpp file. It can have any name.
  3. - Within this file you must then write the following lines of code:
     #include "MinimalTypes.h" <- This includes the library so the compiler can match the function definitions within the CPP component to the functions declared in the header file
+                                 
     #include MINIMAL_TYPES_INCLUDE <- This includes the addition headers that are not neccessary in the header file but are for the function definitions within the CPP component
+  
     MINIMAL_TYPES_CPP <- This defines the neccessary function definitions for the library to work properly
  
 And that is the setup complete. You should now be able to indidividually include "Vector.h", "String.h", and "Map.h", or include "MinimalTypes.h" to include all 3 files at once.
