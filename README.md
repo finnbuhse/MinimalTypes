@@ -1,7 +1,7 @@
 # MinimalTypes
 
 # What is included?
-Minimal types currently provides 6 types total, with the intension of more to come in the future.
+MinimalTypes currently provides 6 types total, with the intension of more to come in the future.
 These include:
   - Vector<typename T>: A dynamic array which can contain a type of choice, it has a size of 16 bytes. However, its buffer is allocated elsewhere so its total memory consumption is this plus the size of the buffer. It is also a Plain-Old-Data (POD) type and the advantage as a result is that it is more memory efficient and can be packed contiguously into arrays. Although, due to the restrictions of POD types, this class must be manually allocated with 'initialize()' and deallocated with 'destroy()'.
   - List<typename T>: A dynamic linked list which can contain a type of choice, it has a size of 24 bytes. It is not a POD type.
