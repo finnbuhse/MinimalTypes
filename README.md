@@ -8,7 +8,7 @@ These include:
   - SortedList<typename T>: A dynamic linked list which automatically sorts elements as you append them to it. It also has a size of 24 bytes. It is not a POD type.
   - String<size_t S>: A fixed size string type which can be edited at runtime but cannot change size. It has a size of S and is a POD type. It also automatically constructs and deconstructs.
   - ContiguousMap<typename K, typename T>: A non-POD hash map which utilises indices and a seperate buffer to store contained values contiguously. It has a size of 112 bytes.
-  - StaticMap<typename K, typename T, size_t N>: A non-POD hash map which utilises indices and a array to store contained values as contiguously as possible while maintaining the same pointers for the contained values. This is more efficient since there is no memory reallocation (Apart from potentially within internal map). It has a size of 80 bytes plus N * sizeof(T).
+  - StaticMap<typename K, typename T, size_t N>: A non-POD hash map which utilises indices and a array to store contained values as contiguously as possible while maintaining the same pointers for the contained values. This is more efficient since there is no memory reallocation (apart from within internal map). It has a size of 80 bytes plus N * sizeof(T).
   
 # How to setup
  1. - Download the library as a ZIP and provide it's include directory to your IDE or copy the files into your project.
